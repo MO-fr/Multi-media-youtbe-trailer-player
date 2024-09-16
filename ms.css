@@ -1,0 +1,41 @@
+/* Video container styles */
+.vid-container {
+    display: flex;
+    justify-content: center; /* Centers the iframe horizontally */
+    margin-top: 20px; /* Adds space above the video */
+    border-radius: 30px; /* Smooth rounding for the container */
+    background-color: #f0f0f0; /* Light background for the container */
+    max-width: 700px; /* Limits the width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds padding around the video */
+    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for the container */
+}
+
+.vid-container iframe {
+    border-radius: 15px; /* Smoothly round the video itself */
+    overflow: hidden;
+}
+
+/* adding Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.watch-button {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #000000;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
