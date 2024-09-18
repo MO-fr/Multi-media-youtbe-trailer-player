@@ -4,11 +4,11 @@
     justify-content: center; /* Centers the iframe horizontally */
     margin-top: 20px; /* Adds space above the video */
     border-radius: 30px; /* Smooth rounding for the container */
-    background-color: #f0f0f0; /* Light background for the container */
+    background-color: #f3f1ed; /* Light background for the container */
     max-width: 700px; /* Limits the width of the container */
     margin: 0 auto; /* Centers the container */
     padding: 20px; /* Adds padding around the video */
-    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for the container */
+    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3); /* Soft shadow for the container */
 }
 
 .vid-container iframe {
@@ -16,18 +16,18 @@
     overflow: hidden;
 }
 
-/* adding Button */
-.button-container {
+.button-container, .button-container2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.watch-button {
-    font-size: 18px;
+.next-button, .back-button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px; /* Adjust font size */
     padding: 12px 24px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #000000; /* Green color */
+    color: #d48a00;
     border: none;
     border-radius: 30px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
@@ -35,7 +35,21 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.watch-button:hover {
-    background-color: #000000;
-    transform: scale(1.05); /* Slightly enlarges the button */
+.next-button:hover, .back-button:hover {
+    background-color: #c5da0a; /* Change to a lighter green */
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+.back-button {
+    background-color: #dd1103; /* Set a different background color for the "back" button */
+}
+
+.back-button:hover {
+    background-color: #e7e40c; /* Hover color for the back button */
+    transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+body {
+    background: linear-gradient(to right, #cf0707, #faf4f4);
+    
 }
