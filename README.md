@@ -1,34 +1,60 @@
-# Milestone-1
-- [ ] enhance focus time for video watching  
+# Top 10 Highest Rated MCU Trailers 🔥🎥
 
-# Project Scope
-- [ ] Create an HTML webpage that embeds a Youtube Video viewer. 
+This project is a simple webpage that showcases the **Top 10 Highest-Rated Trailers** from the Marvel Cinematic Universe (MCU). It allows users to cycle through the trailers using "Next" and "Back" buttons, enhancing the user experience by providing easy navigation between videos.
 
-- [ ] The User Interface (UI) should contain HTML5 elements for videos and links.
-- [ ] Allow users to view videos without navigating to Youtube.com
+## ✨ Features
 
-HTML Video tags 
-- [ ] Video 
-- [ ] Video Description 
-- [ ] Video Controls 
-- [ ] Control for toggling auto-play feature on/off 
+- **Responsive Layout** 📱: The webpage is built with a responsive design that adjusts to different screen sizes.
+- **Video Cycling** 🔄: Users can cycle through a list of 10 MCU trailers using "Next" and "Back" buttons.
+- **Styled Buttons** 🎨: The buttons are designed with hover effects and a dynamic scale transformation to enhance user interaction.
+- **Embedded YouTube Videos** ▶️: The MCU trailers are embedded from YouTube for easy streaming.
 
-# Project Task: 
-- [ ] Create an HTML header section and add todo comments for the future implementation of the project 
-- [ ] Create footer that holds the temporary links for your social media handles that we will be - [ ] adding as the project progresses
-- [ ] Key components  
-- [ ] Your video title should use a heading 1  
-- [ ] Video description should be in a details, summary & paragraph elements 
-- [ ] Video should centered on the page and only take up half of the available screen space from the top, bottom, left and right
-- [ ] Your video element should include class name, id and name attribute
-- [ ] Add a toggle that will allow user toggle videos auto-play on or off  
-- [ ] Add a dropbox box that allows users to select different categories of videos 
+## 🛠️ Technologies Used
+
+- **HTML**: For the basic structure of the webpage.
+- **CSS**: Custom styles to enhance the visual appeal, including button styling, video container, and background colors.
+- **JavaScript**: Used to handle the logic of cycling through the trailers and updating the video player dynamically.
+
+## ⚙️ How It Works
+
+1. The webpage embeds a YouTube video in an `<iframe>` element.
+2. A list of MCU trailer URLs is stored in an array in the JavaScript file.
+3. Users can click on the "Next" or "Back" buttons to navigate through the videos.
+4. The video player is updated by changing the `src` attribute of the iframe to the corresponding trailer URL from the array.
+
+## 📁 Project Structure
 
 
-Next Level Flex 
-- [ ] Target level 12 indicators on the concept rubric 
-- [ ] Style the background color of your page with an image that compliments the video
-- [ ] Add emoji to the summary for the title of the video
+## Installation
 
-Notes 
-Add a demo of what the page should look like 
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/MO-fr/mcu-trailers.git
+## Open the index.html file in your browser:
+  open `ms.html`
+
+
+## 🚀 Usage
+
+- Load the webpage in any browser.
+- Click the "Next" button to move to the next trailer in the list.
+- Click the "Back" button to go back to the previous trailer.
+
+## 🚧 Future Improvements
+
+- Add more trailers or additional features like automatic video playback.
+- Improve the design to make the page more interactive and dynamic.
+- Add video descriptions or ratings for each trailer.
+
+##📜 License
+
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
+```plaintext
+
+
+/
+│-- ms.html       # The main HTML file for the webpage
+│-- ms.css           # Custom styles for the webpage
+│-- ms.js            # JavaScript file for cycling through trailers
