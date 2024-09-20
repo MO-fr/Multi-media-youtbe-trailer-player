@@ -1,19 +1,16 @@
 /* Video container styles */
+
 .vid-container {
+    overflow: hidden;
+    background: linear-gradient(to left, #e40707, #faf4f4);
     display: flex;
     justify-content: center; /* Centers the iframe horizontally */
     margin-top: 20px; /* Adds space above the video */
     border-radius: 30px; /* Smooth rounding for the container */
     background-color: #f3f1ed; /* Light background for the container */
-    max-width: 700px; /* Limits the width of the container */
     margin: 0 auto; /* Centers the container */
     padding: 20px; /* Adds padding around the video */
     box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3); /* Soft shadow for the container */
-}
-
-.vid-container iframe {
-    border-radius: 15px; /* Smoothly round the video itself */
-    overflow: hidden;
 }
 
 .button-container, .button-container2 {
@@ -50,6 +47,6 @@
 }
 
 body {
-    background: linear-gradient(to right, #cf0707, #faf4f4);
+    background: linear-gradient(to right, #e40606, #faf4f4);
     
 }
