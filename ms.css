@@ -1,16 +1,15 @@
 /* Video container styles */
-
 .vid-container {
     overflow: hidden;
     background: linear-gradient(to left, #e40707, #faf4f4);
     display: flex;
-    justify-content: center; /* Centers the iframe horizontally */
-    margin-top: 20px; /* Adds space above the video */
-    border-radius: 30px; /* Smooth rounding for the container */
-    background-color: #f3f1ed; /* Light background for the container */
-    margin: 0 auto; /* Centers the container */
-    padding: 20px; /* Adds padding around the video */
-    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3); /* Soft shadow for the container */
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #f3f1ed;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
 }
 
 .button-container, .button-container2 {
@@ -21,9 +20,9 @@
 
 .next-button, .back-button {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px;
     padding: 12px 24px;
-    background-color: #000000; /* Green color */
+    background-color: #000000;
     color: #d48a00;
     border: none;
     border-radius: 30px;
@@ -33,20 +32,80 @@
 }
 
 .next-button:hover, .back-button:hover {
-    background-color: #c5da0a; /* Change to a lighter green */
-    transform: scale(1.1); /* Slightly enlarges the button */
+    background-color: #c5da0a;
+    transform: scale(1.1);
 }
 
 .back-button {
-    background-color: #dd1103; /* Set a different background color for the "back" button */
+    background-color: #dd1103;
 }
 
 .back-button:hover {
-    background-color: #e7e40c; /* Hover color for the back button */
-    transform: scale(1.1); /* Slightly enlarges the button */
+    background-color: #e7e40c;
 }
 
-body {
-    background: linear-gradient(to right, #e40606, #faf4f4);
-    
+.dc-button, .anime-button {
+    font-family: monospace;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dc-button {
+    background-color: #0d2cb8;
+    color: #fcfcfc;
+}
+
+.dc-button:hover {
+    background-color: #ffffff;
+    color: #0d2cb8;
+    transform: scale(1.1);
+}
+
+.anime-button {
+    background-color: #d46b15;
+    color: #000000;
+}
+
+.anime-button:hover {
+    background-color: #000000;
+    color: #d46b15;
+    transform: scale(1.1);
+}
+
+.dc-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: -40px;
+}
+
+.anime-container {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.return-button {
+    margin-left: 580px;
+    font-family: monospace;
+    color: #f1f1f1;
+    background-color: #e21d0f;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.return-button:hover {
+    background-color: #ffffff;
+    color: #e21d0f;
+    transform: scale(1.1);
+
 }
