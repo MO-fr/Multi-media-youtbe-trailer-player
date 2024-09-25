@@ -1,111 +1,140 @@
 /* Video container styles */
 .vid-container {
-    overflow: hidden;
-    background: linear-gradient(to left, #e40707, #faf4f4);
+    overflow: hidden; /* Prevent content overflow */
+    background: linear-gradient(to left, #e40707, #faf4f4); /* Gradient background */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the video player */
     margin-top: 20px;
-    border-radius: 30px;
+    border-radius: 30px; /* Rounded corners */
     background-color: #f3f1ed;
-    margin: 0 auto;
+    margin: 0 auto; /* Center container horizontally */
     padding: 20px;
-    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
+    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3); /* Add box shadow for depth */
 }
 
-.button-container, .button-container2 {
+/* Button container styles */ 
+.button-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center buttons horizontally */
     margin-top: 20px;
 }
 
-.next-button, .back-button {
+
+/* Next and Back button styles */ 
+.next-button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     padding: 12px 24px;
-    background-color: #000000;
+    background-color: #000000; /* Default button color */
+    color: #d48a00;
+    border: none;    
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Button shadow */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.back-button{
+    margin-left: -200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #000000; /* Default button color */
     color: #d48a00;
     border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Button shadow */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
-.next-button:hover, .back-button:hover {
-    background-color: #c5da0a;
-    transform: scale(1.1);
+/* Hover effect for next and back buttons */
+.next-button:hover, 
+.back-button:hover {
+    background-color: #c5da0a; /* Change background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+/* Back button specific style */
 .back-button {
-    background-color: #dd1103;
+    background-color: #dd1103; /* Red color for back button */
 }
 
 .back-button:hover {
-    background-color: #e7e40c;
+    background-color: #e7e40c; /* Hover effect specific to back button */
 }
 
-.dc-button, .anime-button {
+/* DC and Anime button styles */
+.dc-button, 
+.anime-button {
     font-family: monospace;
     font-size: 18px;
     padding: 12px 24px;
     border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Button shadow */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
+/* DC button specific style */
 .dc-button {
-    background-color: #0d2cb8;
-    color: #fcfcfc;
+    background-color: #0d2cb8; /* Blue background */
+    color: #fcfcfc; /* White text */
 }
 
 .dc-button:hover {
-    background-color: #ffffff;
-    color: #0d2cb8;
-    transform: scale(1.1);
+    background-color: #ffffff; /* Change background on hover */
+    color: #0d2cb8; /* Blue text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+/* Anime button specific style */
 .anime-button {
-    background-color: #d46b15;
-    color: #000000;
+    background-color: #d46b15; /* Orange background */
+    color: #000000; /* Black text */
 }
 
 .anime-button:hover {
-    background-color: #000000;
-    color: #d46b15;
-    transform: scale(1.1);
+    background-color: #000000; /* Change background on hover */
+    color: #d46b15; /* Orange text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
+/* DC container specific style */
 .dc-container {
     display: flex;
-    justify-content: left;
+    justify-content: left; /* Align DC button to the left */
     margin-bottom: -40px;
 }
 
+/* Anime container specific style */
 .anime-container {
     display: flex;
-    justify-content: right;
+    justify-content: right; /* Align Anime button to the right */
     margin-bottom: 20px;
 }
 
+/* Return button specific style */
 .return-button {
-    margin-left: 580px;
+    margin-left: 550px; /* Center the button */
     font-family: monospace;
-    color: #f1f1f1;
-    background-color: #e21d0f;
+    color: #f1f1f1; /* Light text color */
+    background-color: #e21d0f; /* Red background */
     font-size: 18px;
     padding: 12px 24px;
     border: none;
-    border-radius: 30px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Button shadow */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect for return button */
 .return-button:hover {
-    background-color: #ffffff;
-    color: #e21d0f;
-    transform: scale(1.1);
-
+    background-color: #ffffff; /* White background on hover */
+    color: #e21d0f; /* Red text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+

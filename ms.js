@@ -29,6 +29,7 @@ const anime_trailers = [
     'https://www.youtube.com/embed/FHgm89hKpXU?si=jnf0am5JYVBeNcPK'
 ];
 
+
 let currentVideoIndex = 0;
 let currentPlaylist = videos; // Default playlist
 const videoPlayer = document.querySelector("iframe");
@@ -50,11 +51,24 @@ function prevVideo() {
     updateVideo();
 }
 
+//creating dc function
+
+function updatePageTitle(title) {
+   let pageTitle = document.getElementById("page-title");
+   pageTitle.innerHTML = title;
+    
+}
+
 // Switch playlist to DC trailers
-function loadDC() {
+function loadDC(evnt) {
+
+    console.log("LoadDC function ")
+    // evnt.preventDefault();
     currentPlaylist = dc_movies;
     currentVideoIndex = 0; // Reset index
     updateVideo();
+    updatePageTitle("DC Animated Movie Trailers! &#x1F525");
+    
 }
 
 // Switch playlist to Anime trailers
@@ -62,17 +76,22 @@ function loadAnime() {
     currentPlaylist = anime_trailers;
     currentVideoIndex = 0; // Reset index
     updateVideo();
+    updatePageTitle("Anime Trailers")
 }
 
 function loadMCU() {
     currentPlaylist = videos;
     currentVideoIndex = 0; // Reset index
     updateVideo();
+    updatePageTitle("Top 10 Highest Rated MCU Trailers of All Time!")
 }
 
 // Add event listeners for buttons
 document.querySelector(".next-button").addEventListener("click", nextVideo);
 document.querySelector(".back-button").addEventListener("click", prevVideo);
-document.querySelector(".dc-button").addEventListener("click", loadDC);
+document.querySelector("#dc-button").addEventListener("click", loadDC);
 document.querySelector(".anime-button").addEventListener("click", loadAnime);
 document.querySelector(".return-button").addEventListener("click", loadMCU);
+
+
+
