@@ -62,13 +62,12 @@ function updatePageTitle(title) {
 // Switch playlist to DC trailers
 function loadDC(evnt) {
 
-    console.log("LoadDC function ")
+    console.log("LoadDC function")
     // evnt.preventDefault();
     currentPlaylist = dc_movies;
     currentVideoIndex = 0; // Reset index
     updateVideo();
-    updatePageTitle("DC Animated Movie Trailers! &#x1F525");
-    
+    updatePageTitle("DC Animated Movie Trailers! &#x1F525");   
 }
 
 // Switch playlist to Anime trailers
@@ -89,8 +88,21 @@ function loadMCU() {
 // Add event listeners for buttons
 document.querySelector(".next-button").addEventListener("click", nextVideo);
 document.querySelector(".back-button").addEventListener("click", prevVideo);
-document.querySelector("#dc-button").addEventListener("click", loadDC);
-document.querySelector(".anime-button").addEventListener("click", loadAnime);
+
+// Check if the selected option contains the letters "dc" and if so will change to that playlist
+document.getElementById("select-id").addEventListener("change", function(event) {
+    const selectedOption = event.target.value;
+    if (selectedOption.includes("Dc")) {
+        loadDC();
+// Check if the selected option contains the letters "anime" and if so will change to that playlist 
+
+    } else if (selectedOption.includes("Anime")) {
+        loadAnime();
+    } else {
+        loadMCU();
+    }
+});
+
 document.querySelector(".return-button").addEventListener("click", loadMCU);
 
 

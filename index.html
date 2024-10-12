@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="ms.css">
     <script defer src="ms.js"></script> 
 </head>
-<body style="background: linear-gradient(to left, #f1eded, #e91212)";> 
+<body style="background: linear-gradient(to top, #e40707, #faf7f4)";> 
     
     <h1 id= "page-title"
     style="font-family: Source Code Pro, monospace; text-align: center;
         border: 10px solid #000; box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5);  
-        border-radius: 24px; padding: 15px; background-color: #f5f5f5;">
+        border-radius: 24px; padding: 15px; background-color: #e40707;">
         Top 10 Highest Rated MCU Trailers of All Time! &#x1F525;
     </h1>
 
@@ -34,17 +34,20 @@
     </div>
 
     <!-- DC and Anime playlist buttons -->
-    <div class="dc-container">
-        <button id="dc-button" class="dc-button">DC Trailers</button>
-    </div>
-     
-    <div class="anime-container">
-        <button class="anime-button">Anime Trailers</button>
-    </div>
     
-    <!--go back to msu playlist button-->
-    <div class="return-container">
-        <button class="return-button">Back to MCU/Reset</button>
-    </div>
+    <select class="select-button" id="select-id">
+        <option>Different Trailers</option>
+        <option id="dc-button" class="dc-button"> Dc Trailers</option> 
+        <option id="anime-button" class="anime-button">Anime Trailers</option>
+    </select>   
+        
+    
+         <!--go back to msu playlist button-->
+        <div>
+            <button class="return-button" class="return-container">Back to MCU</button>
+        </div>
+    
+
+    
 </body>
 </html>

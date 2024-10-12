@@ -1,7 +1,8 @@
 /* Video container styles */
 .vid-container {
+    max-width: 900px;
     overflow: hidden; /* Prevent content overflow */
-    background: linear-gradient(to left, #e40707, #faf4f4); /* Gradient background */
+    background: linear-gradient(to top, #d82121, #faf4f4); /* Gradient background */
     display: flex;
     justify-content: center; /* Center the video player */
     margin-top: 20px;
@@ -9,8 +10,23 @@
     background-color: #f3f1ed;
     margin: 0 auto; /* Center container horizontally */
     padding: 20px;
-    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3); /* Add box shadow for depth */
+    box-shadow: 0 24px 8px rgba(73, 70, 70, 0.3); /* Add box shadow for depth */
 }
+
+
+.select-button{
+    position: relative;
+    bottom: 400px;
+    left: 30px;
+    font-family:'Rockwell', serif;
+    background-color: rgb(126, 110, 111);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 130px;
+    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
+}
+
 
 /* Button container styles */ 
 .button-container {
@@ -115,12 +131,19 @@
     margin-bottom: 20px;
 }
 
+#page-title{
+    color: white;
+}
+
 /* Return button specific style */
 .return-button {
+    position: relative;
+    font-weight: bold;
+    left: 47px;
     margin-left: 550px; /* Center the button */
     font-family: monospace;
-    color: #f1f1f1; /* Light text color */
-    background-color: #e21d0f; /* Red background */
+    color: #e21d0f; /* Light text color */
+    background-color: white; /* Red background */
     font-size: 18px;
     padding: 12px 24px;
     border: none;
@@ -132,8 +155,8 @@
 
 /* Hover effect for return button */
 .return-button:hover {
-    background-color: #ffffff; /* White background on hover */
-    color: #e21d0f; /* Red text on hover */
+    background-color: #e21d0f; /* White background on hover */
+    color: white; /* Red text on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
