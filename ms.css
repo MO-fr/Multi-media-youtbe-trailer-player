@@ -11,6 +11,7 @@
     margin: 0 auto; /* Center container horizontally */
     padding: 20px;
     box-shadow: 0 24px 8px rgba(73, 70, 70, 0.3); /* Add box shadow for depth */
+
 }
 
 
@@ -135,6 +136,16 @@
     color: white;
 }
 
+.page-title {
+    font-family: 'Source Code Pro', monospace; /* Set font family */
+    text-align: center; /* Center text alignment */
+    border: 10px solid #000; /* Solid black border */
+    box-shadow: 0 24px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    border-radius: 24px; /* Rounded corners */
+    padding: 15px; /* Padding around the text */
+    background-color: #e40707; /* Set background color */
+}
+
 /* Return button specific style */
 .return-button {
     position: relative;
@@ -159,5 +170,91 @@
     color: white; /* Red text on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+.settings{
+    position: relative;
+    left: 1000px;
+    bottom: 480px;
+    padding: 20px;
+}
+
+.dropdown{
+    font-family:monospace ;
+    top: 30px;
+    right: 0;
+    color: #d81c0e;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.dropdown:hover {
+    background-color: rgba(233, 56, 24, 0.2); /* Hover effect */
+}
+
+.dropdown li {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    list-style-type: none; /* Removes bullet points from list items */
+    padding: 10px;
+    cursor: pointer;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text within the item */
+}
+
+.theme-option {
+    font-weight: bolder;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-option:hover{
+    background-color: white;
+}
+
+.theme-content {
+    cursor: pointer;
+    font-family: monospace;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #df1212;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    flex-direction: column;
+    position: relative; /* Keep it as relative if you need it for some reason */
+    /* Remove left and bottom */
+}
+
+.theme-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    backdrop-filter: blur(5px); /* Blurring effect */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 10000; /* Ensure it's above other content */
+}
+
+
+
+
 
 
