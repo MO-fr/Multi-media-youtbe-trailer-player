@@ -1,78 +1,88 @@
-.body{
+/* Set background color for the entire page */
+.body {
     background-color: black;
 }
 
+/* Style for the profile container */
 .profile-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    text-align: center;
+    width: 300px; /* Set container width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f7f7f7; /* Set background color */
+    border-radius: 10px; /* Make corners rounded */
+    text-align: center; /* Center align text */
     position: relative;
-    top: 90px;
-    
+    top: 90px; /* Position from the top */
+    border: 5px solid red; /* Add a red border */
 }
 
+/* Style for input fields inside the profile container */
 .profile-container input[type="text"],
 .profile-container input[type="email"],
 .profile-container input[type="password"] {
     position: relative;
-    right: 12px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    right: 12px; /* Adjust position */
+    width: 100%; /* Make input fields full-width */
+    padding: 10px; /* Add padding inside input fields */
+    margin: 10px 0; /* Add margin above and below */
+    border-radius: 5px; /* Make input corners rounded */
+    border: 1px solid #ccc; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow effect */
 }
 
-#profileForm{
-    font-family: monospace;
-    font-style: oblique;
-    font-weight: bolder;
-    color: red;
+/* Style for the profile form */
+#profileForm {
+    font-family: monospace; /* Use monospace font */
+    font-style: oblique; /* Slightly slanted text */
+    font-weight: bolder; /* Make text bold */
+    color: red; /* Set text color to red */
 }
 
-#h1{
-    font-family:monospace;
-    color: red;
-    font-weight: bold;
+/* Style for the heading */
+#h1 {
+    font-family: monospace; /* Use monospace font */
+    color: red; /* Set text color to red */
+    font-weight: bold; /* Make text bold */
 }
 
-.submit-button{
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 10px, 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: red;
-    color: wheat;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* Style for the submit button */
+.submit-button {
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 10px; /* Make button corners rounded */
+    padding: 10px, 20px; /* Padding inside button */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Set font */
+    background-color: red; /* Set background color */
+    color: wheat; /* Set text color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
 }
 
-.submit-button:hover{
-    background-color: #36d80e;
-    color: black;
-    transform: scale(1.1);
+/* Style when hovering over the submit button */
+.submit-button:hover {
+    background-color: #36d80e; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
-.back-button{
-    background-color: red;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: monospace;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-
+/* Style for the back button */
+.back-button {
+    background-color: red; /* Set background color */
+    border-radius: 10px; /* Make button corners rounded */
+    color: white; /* Set text color */
+    font-size: 20px; /* Set font size */
+    font-weight: bolder; /* Make text bold */
+    font-family: monospace; /* Use monospace font */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
 }
 
-.back-button:hover{
-    transform: scale(1.1);
+/* Style when hovering over the back button */
+.back-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
-#profileError{
-    font-family: monospace;
+/* Style for the profile error message */
+#profileError {
+    font-family: monospace; /* Use monospace font */
     position: relative;
-    top: 10px;
+    top: 10px; /* Position from the top */
+    font-weight: bold;
 }

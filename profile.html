@@ -4,35 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="profile.css">
 </head>
 <body class="body">
 
+    <!-- Navigation bar with a link to the Home page -->
     <nav>
         <ul class="nav-menu">
-            <li> <button class="back-button"><a href="index.html">Home</a></li></button>
+            <li>
+                <!-- Back button to navigate to the Home page -->
+                <button class="back-button">
+                    <a href="index.html">Home</a>
+                </button>
+            </li>
         </ul>
     </nav>
 
+    <!-- Main container for the profile form -->
     <div class="profile-container">
+        <!-- Heading for the user profile section -->
         <h1 id="h1">User Profile</h1>
+        <!-- Form for user profile information -->
         <form id="profileForm">
+            <!-- Input field for name -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <!-- Input field for email -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <!-- Input field for password -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            <!-- Submit button to save profile information -->
             <button type="submit" class="submit-button" id="submit-button">Save Profile</button>
         </form>
 
+        <!-- Error message container, shown if there's a form submission error -->
         <div id="profileError" class="error"></div>
-
     </div>
 
+    <!-- Footer section with copyright information -->
     <footer>
         &copy; 2024 Multi Media Player | All Rights Reserved
     </footer>
+
+    <!-- Link to the external JavaScript file -->
     <script src="profile.js"></script>
 </body>
 </html>
