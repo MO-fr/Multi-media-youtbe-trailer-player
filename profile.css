@@ -70,3 +70,9 @@
 .back-button:hover{
     transform: scale(1.1);
 }
+
+#profileError{
+    font-family: monospace;
+    position: relative;
+    top: 10px;
+}
