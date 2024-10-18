@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body class="body">
+
+    <nav>
+        <ul class="nav-menu">
+            <li> <button class="back-button"><a href="index.html">Home</a></li></button>
+        </ul>
+    </nav>
+        
+    <div class="profile-container">
+        <h1 id="h1">User Profile</h1>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="submit-button" id="submit-button">Save Profile</button>
+        </form>
+
+        <div id="profileError" class="error"></div>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Multi Media Player | All Rights Reserved
+    </footer>
+
+    <script src="ms.js"></script>
+</body>
+</html>

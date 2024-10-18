@@ -25,7 +25,7 @@
     color: white;
     height: 30px;
     width: 130px;
-    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -252,6 +252,37 @@
     align-items: center; /* Center vertically */
     z-index: 10000; /* Ensure it's above other content */
 }
+
+.footer{
+    background-color: bisque;
+    font-weight: bolder;
+    color: red;
+    border-radius: 6px;
+    text-align: center;
+    font-family: monospace;
+    height: 30px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.signup-button{
+    position: relative;
+    bottom: 540px;
+    left: 1170px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(126, 110, 111);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease
+}
+
+    
 
 
 

@@ -1,0 +1,72 @@
+.body{
+    background-color: black;
+}
+
+.profile-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="password"] {
+    position: relative;
+    right: 12px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+#profileForm{
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: bolder;
+    color: red;
+}
+
+#h1{
+    font-family:monospace;
+    color: red;
+    font-weight: bold;
+}
+
+.submit-button{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px, 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: red;
+    color: wheat;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover{
+    background-color: #36d80e;
+    color: black;
+    transform: scale(1.1);
+}
+
+.back-button{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.back-button:hover{
+    transform: scale(1.1);
+}

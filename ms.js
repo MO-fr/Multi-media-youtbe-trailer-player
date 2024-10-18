@@ -83,9 +83,7 @@ function loadMCU() {
 }
 
 // Add event listeners for buttons
-document.querySelector(".return-button").addEventListener("click", loadMCU);
-document.querySelector(".next-button").addEventListener("click", nextVideo);
-document.querySelector(".back-button").addEventListener("click", prevVideo);
+
 
 // Check if the selected option contains the letters "dc" and if so will change to that playlist
 document.getElementById("select-id").addEventListener("change", function(event) {
@@ -100,6 +98,10 @@ document.getElementById("select-id").addEventListener("change", function(event) 
         loadMCU();
     }
 });
+
+document.querySelector(".return-button").addEventListener("click", loadMCU);
+document.querySelector(".next-button").addEventListener("click", nextVideo);
+document.querySelector(".back-button").addEventListener("click", prevVideo);
 
 // Settings icon click event
 const gearIcon = document.getElementById('gear-icon');
