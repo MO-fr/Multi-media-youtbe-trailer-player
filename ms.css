@@ -148,6 +148,7 @@
 
 /* Return button specific style */
 .return-button {
+    visibility: hidden;
     position: relative;
     font-weight: bold;
     left: 47px;
@@ -261,13 +262,13 @@
     text-align: center;
     font-family: monospace;
     height: 30px;
-    position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
+
 .signup-button{
     position: relative;
-    bottom: 540px;
+    bottom: 510px;
     left: 1170px;
     font-family: monospace;
     font-weight: bold;

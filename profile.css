@@ -18,8 +18,8 @@
 
 /* Style for input fields inside the profile container */
 .profile-container input[type="text"],
-.profile-container input[type="email"],
-.profile-container input[type="password"] {
+.profile-container input[type="password"],
+.profile-container input[type="email"] {
     position: relative;
     right: 12px; /* Adjust position */
     width: 100%; /* Make input fields full-width */
