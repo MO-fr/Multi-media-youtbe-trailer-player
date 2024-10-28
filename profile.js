@@ -43,10 +43,4 @@ const savedTheme = localStorage.getItem('theme') || 'light';
 // Apply the saved theme on profile page
 applyTheme(savedTheme);
 
-function applyTheme(theme) {
-    const body = document.body;
-    const themes = ['light', 'dark', 'blueberry', 'earth', 'warm'];
-    themes.forEach(t => body.classList.remove(t + '-theme'));
-    body.classList.add(theme + '-theme');
-}
-g
+
